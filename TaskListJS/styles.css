@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Стили для поля ввода */
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    font-size: 16px;
+    border: 10px solid #ccc;
+    border-radius: 5px ;
+}
+
+/* Стили для кнопки добавления */
+.add-button {
+    width: 180px;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Стили для списка задач */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 30px 10px 0; /* Добавляем правый отступ для места под кнопку удаления */
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    max-width: 500px; /* Максимальная ширина элемента li */
+    word-wrap: break-word; /* Разрешить перенос слов */
+
+}
+/* Стили для кнопки удаления */
+.delete-button {
+    margin-left: auto; /* Помещаем кнопку удаления в конец строки */
+    background-color: #dc3545; /* Красный цвет для кнопки удаления */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.add-button:hover {
+    background-color: #00b36e; /* Изменение цвета при наведении */
+    transition: background-color 0.3s ease; /* Добавляем анимацию */
+}
+
+.delete-button:hover {
+    background-color: #dd7f32; /* Изменение цвета при наведении */
+    transition: background-color 0.3s ease; /* Добавляем анимацию */
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    max-width: 500px; /* Максимальная ширина элемента li */
+    word-wrap: break-word; /* Разрешить перенос слов */
+}
+
+
+/* Стили для чекбокса "Выполнено" */
+.done-checkbox {
+    width: 20px; /* Увеличиваем ширину чекбокса */
+    height: 20px; /* Увеличиваем высоту чекбокса */
+    border: 5px solid #007bff; /* Устанавливаем цвет рамки */
+    border-radius: 5px; /* Делаем скругленные углы */
+    margin-right: 10px; /* Добавляем отступ справа от текста задачи */
+}
+
+.done-checkbox:checked {
+    background-color: #007bff; /* Устанавливаем цвет фона при выборе */
+}
